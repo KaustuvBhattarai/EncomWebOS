@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ENCOM OS 12</title>
+  <meta name="title" content="CLI | jQuery Command Line Interface">
+  <meta name="description" content="Simulating a command line interface to display info using jQuery">
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript">
+    <!--
+    function updateTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        if (minutes < 10){
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+            seconds = "0" + seconds;
+        }
+        var v = hours + ":" + minutes + ":" + seconds + " ";
+        if(hours > 11){
+            v+="PM";
+        } else {
+            v+="AM"
+        }
+        setTimeout("updateTime()",1000);
+        document.getElementById('time').innerHTML=v;
+    }
+    updateTime();
+    //-->
+
+</script>
+<style>
+    div {
+      width: 500px;
+      padding: 20px;
+      border-top: 5px solid #1E90FF;
+      /* border: 1px solid #1E90FF; */
+      margin: 0;
+      display: flex;
+      
+    /* justify-content: center;
+    align-items: center; */
+    }
+    body{ margin:0 auto; }
+    </style>
+</head>
+<body >
+<br><br><br><br><br>
+<div>
+<main>
+<section id="home">
+<h1>ENCOM OS</h1>
+<p>Kaustuv Bhattarai | $SU USER</p>
+<h5>Corporate Network Address: [wlan0] 192.168.0.5</h5>
+<p><span id="time"></span></p>
+</section>
+
+<section id="about">
+<h2><span>&raquo;About</span></h2>
+<p>This is an experiment built by Kaustuv Bhattarai for simulating a web-based command line interface operating system. </p>
+<p>Envisioned in 2020 with the concept of remotely overlooking the grid.</p>
+<p>Automating the scheduling of rectifiers which are inconsitent on device time.</p>
+<p>Using a time scale on the basis of a set of atomic clocks at the Monitor Stations and onboard the satellites. For within 1/15,000,000,000 of a second accuracy. </p>
+<p> The OS also gives easy access to the Encom webframe and Database for remote administration. </p>
+<p>[beta] The centralisation of the LLLSDLaserControl hub. </p>
+</br>
+
+<p>Depends on jQuery</p>
+<p>License: MIT</p>
+</br>
+<p> Also makes slight use of OpenSUSE and CentOS for Server control </p>
+</section>
+
+<section id="usage">
+<h2><span>&raquo;Usage</span></h2>
+<p>sudo login -f (only for admin access)</p>
+<p>login history (displays_encom_logins)</p>
+<p>LLLSDLaserControl -ok (if_device_is_online) [no_of_apertures 1-2]</p>
+<p>uname -a (displays_server_info) (temporary_invokes_admin)</p>
+<p>whoami (displays_current_admin)</p>
+<p>time (displays_system_time)</p>
+<p>kill (terminates_process_instantly)</p>
+<p>
+<br>
+<p> Disclaimer : Use with caution. Use of LLLSDLaser in Unready State may cause System Failure. Check [de-resolution] and [in-grid-desynchronization] before bootup.</p>
+</section>
+
+<section id="download">
+<h2><span>&raquo;Download</span></h2>
+<p> The downloads are unfortunately disabled due to inundation of requests <kbd>166/100</kbd> </p> 
+<p>You can email at meet.kaustuv@gmail.com for a demo or contact me from my alternative website : <a href="https://kaustuvbhattarai.wordpress.com/">Click Here</a></br></p>
+</section>
+
+<section id="kill">
+<h2><span>&raquo;</span></h2>
+<p>End of line.</p>
+</section>
+
+<section id="uname -a">
+    <h2><span>&raquo;</span></h2>
+    <p>HostID: Linux FBI@x0B1956 3.2.0-4-amd64 # 1 SMP Debian 3.2.51-1 x86_64 GNU/Linux</p>
+    </section>
+<section id="whoami">
+        <h2><span>&raquo;</span></h2>
+        <p>kaustuvbhattarai</p>
+        </section>
+<section id="sudo login -f">
+            <h2><span>&raquo;</span></h2>
+            <p>No home directory specified in Password File!
+                Login in with home=/</p>
+            </section>
+ <section id="LLLSDLaserControl -ok 1">
+                <h2><span>&raquo;</span></h2>
+                <p>/home/tmd # ps -ef ] grep i os12
+                    tmd root 17319 17308 81 17:39 pts/2
+                    18458 18456 0 18:00 pts/4
+                    00:17:00 /home/tmd/Desktop/os 12/os12
+                    00:00:00 /bin/grep -i os12
+                    
+                   </p>
+                   <p> HV online</p>
+                    <p>Analog core memory... OK!</p>
+                    <p> Booting Pattern recognition systems</p>
+                    <p>Merging current data model</p>
+                    <p>Waiting for aperture...</p>
+                </section>
+<section id="login history">
+                    <h2><span>&raquo;</span></h2>
+                    <p>Last login: Wed Jul 13 10:59: 12 from 192.0.0.27</p>
+                    <p></p>Jul 13 11:39:54 AFI-DRSVR login: ROOT LOGIN /dev/console</p>
+                    <p> EncomOS 5. 10</p>
+                    <p> Generic Patch January 2005</p>
+                    <p> You have <kbd>10,539</kbd> new mail.</p>
+                    </section>
+<section id="time">
+<h2><span>&raquo;System time</span></h2>
+    <h2>Current Time: <span id="time"> </span></h2>
+</section>
+
+<section id="error">
+<p>Error<p> 
+</section>
+
+<section id="help">
+<h2><span>&raquo;Help?</span></h2>
+<p><span>Type [command] + <kbd>Enter</kbd></span></p>
+<ul>
+<li>'home' -- Displays Homepage</li>
+<li>'about' -- About EncomOS</li>
+<li>'usage' -- List of System Commands</li>
+<li>'download' -- Download Section</li>
+<li>'help' -- displays this list</li>
+</ul>
+</section>
+
+<span class="command">$<input type="text"></span>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</div>
+</body>
+</html>
